@@ -12,3 +12,11 @@ export type SliderItem = {
 export type ExploreData = ExploreItem[];
 
 export type SliderData = SliderItem[]
+
+
+export type GreatestProps = {
+  img: string;
+  title: string;
+  description: string;
+  linkText: string;
+}
