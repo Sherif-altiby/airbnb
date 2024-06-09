@@ -20,3 +20,15 @@ export const getSliderData = async () => {
     console.log(error);
   }
 };
+
+
+export const getSearchResults = async () => {
+  try {
+    const respone = await fetch(`https://www.jsonkeeper.com/b/5NPS`);
+    const searchResultData = await respone.json();
+
+    return searchResultData;
+  } catch (error) {
+    console.log(error);
+  }
+}

@@ -4,7 +4,7 @@ import React from 'react'
 import SearchBar from './SearchBar'
 import NavBar from './NavBar'
 
-const Header = () => {
+const Header  = ( { placeholder }: {placeholder?: string} ) => {
   return (
     <header className='sticky top-0 bg-white z-50 py-5 shadow-lg' >
        <div className='container grid grid-cols-3 relative' >
@@ -17,7 +17,7 @@ const Header = () => {
                     />
             </Link>
 
-            <SearchBar />
+            <SearchBar placeholder={placeholder} />
 
             <NavBar />
        </div>
