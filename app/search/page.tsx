@@ -27,10 +27,10 @@ const SearchResult = async ( { searchParams: {startDate, endDate, numOfGuests, l
         <main>
               <section className="pt-14" >
                   <div className="container">
-                        <p className="text-xs" > 300+ Stays - {range} - for {numOfGuests} guests</p>
-                        <h1 className="text-3xl font-semibold mt-2 mb-6" > Stays In {location} </h1>
+                        <p className="text-xs dark:text-white" > 300+ Stays - {range} - for {numOfGuests} guests</p>
+                        <h1 className="text-3xl font-semibold mt-2 mb-6 dark:text-white" > Stays In {location} </h1>
 
-                        <div className="hidden lg:inline-flex mb-5 space-x-5 text-gray-800" >
+                        <div className="hidden lg:inline-flex mb-5 space-x-5 text-gray-800 dark:text-white" >
                           {filters.map((filter) =>  <button className="filter-btn" key={filter} > {filter} </button> )}
                         </div>
 

@@ -9,7 +9,7 @@ const Explore = async () => {
   return (
     <section className="pt-6" >
         <div className="container">
-                <h2 className="text-4xl font-semibold mb-5" > Explore Nearby </h2>
+                <h2 className="text-4xl font-semibold mb-5 dark:text-white" > Explore Nearby </h2>
                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4" >
                     {exploreData.map(item => (
                         <ExploreCard key={item.img} img={item.img} distance={item.distance} location={item.location} />

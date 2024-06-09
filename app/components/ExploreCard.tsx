@@ -10,8 +10,8 @@ const ExploreCard = ({ img, location, distance }: ExploreItemProps) => {
         <Image src={img} alt="Expore-Card-Image" fill />
       </div>
       <div>
-        <h2>{location}</h2>
-        <h3>{distance}</h3>
+        <h2 className="dark:text-white" >{location}</h2>
+        <h3 className="dark:text-white" >{distance}</h3>
       </div>
     </div>
   );

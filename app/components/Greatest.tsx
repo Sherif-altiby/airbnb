@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Greatest = ( {img, title, description, linkText}: GreatestProps ) => {
   return (
-    <div className="container relative">
+    <div className="container relative pb-10">
             <div className="relative h-96 min-w-[300px]" >
                 <Image src={img} alt="Greatest-img" fill className="rounded-2xl -z-10 object-cover" />
             </div>

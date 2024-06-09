@@ -17,20 +17,20 @@ const SearchResultCard = ( { img, location, title, description, star, price, tot
       </div>
       <div className='flex flex-col flex-grow pl-5'>
         <div className='flex justify-between'>
-          <p>{location}</p>
-          <HeartIcon className='h-7 cursor-pointer' />
+          <p className="dark:text-white" >{location}</p>
+          <HeartIcon className='h-7 cursor-pointer text-red-600' />
         </div>
-        <h4 className='text-xl'>{title}</h4>
+        <h4 className='text-xl  dark:text-white'>{title}</h4>
         <div className='border-b w-10 pt-2npm run dev' />
         <p className='pt-2 text-sm text-gray-500 flex-grow'>{description}</p>
         <div className='flex justify-between items-end pt-5'>
-          <p className='flex items-center'>
-            <StarIcon className='h-5 text-red-400' />
+          <p className='flex items-center dark:text-white'>
+            <StarIcon className='h-5 text-red-400 dark:text-yellow-400' />
             {star}
           </p>
           <div>
-            <p className='text-lg lg:text-2xl font-semibold pb-2'>{price}</p>
-            <p className='text-right font-extralight '>{total}</p>
+            <p className='text-lg lg:text-2xl font-semibold pb-2 dark:text-white'>{price}</p>
+            <p className='text-right font-extralight dark:text-white '>{total}</p>
           </div>
         </div>
       </div>

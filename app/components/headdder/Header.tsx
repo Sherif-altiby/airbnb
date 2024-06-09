@@ -6,7 +6,7 @@ import NavBar from './NavBar'
 
 const Header  = ( { placeholder }: {placeholder?: string} ) => {
   return (
-    <header className='sticky top-0 bg-white z-50 py-5 shadow-lg' >
+    <header className='sticky top-0 bg-white z-50 py-5 shadow-lg dark:bg-gray-800 ' >
        <div className='container grid grid-cols-3 relative' >
 
             <Link href="/" className='relative flex items-center h-10 my-auto' >
